@@ -1,3 +1,25 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--Shift + Ctrl + 화살표 -->
+
+<div class="row">
+  <div class="col-sm-12">
+      <div class="list-group">
+
+          {% for item in list %}
+          <a href="/detail/{{item.id}}" class="list-group-item">
+              {{ item.title }}
+          </a>
+          {% endfor %}
+
+      </div>
+  </div>
+</div>
+
+
+
 <ul>
     {% for item in list %}
         <li>
