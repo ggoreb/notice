@@ -20,6 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', views.index),
     path('detail/<int:num>/', views.detail),
+    path('about/', views.about),
 ]
 
 

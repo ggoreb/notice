@@ -1,6 +1,10 @@
 from django.shortcuts import render
 from .models import Notice
 
+def about(request):
+    return render(
+        request, 'app/about.html', {})
+
 def index(request):
     notice = Notice.objects.all()
 
